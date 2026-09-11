@@ -1,0 +1,34 @@
+{
+  "name": "adaptive-english-learning",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Adaptive AI-powered English learning platform (React + Express + MongoDB)",
+  "workspaces": [
+    "server",
+    "client"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "concurrently -n server,client -c blue,green \"npm run dev --workspace server\" \"npm run dev --workspace client\"",
+    "build": "npm run build --workspace client",
+    "start": "npm run start --workspace server",
+    "test": "npm test --workspace server",
+    "seed": "npm run seed --workspace server"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pakhlavonKh/adaptive-english-learning.git"
+  },
+  "keywords": [],
+  "author": "Adaptive AI Learn Team",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pakhlavonKh/adaptive-english-learning/issues"
+  },
+  "homepage": "https://github.com/pakhlavonKh/adaptive-english-learning#readme"
+}

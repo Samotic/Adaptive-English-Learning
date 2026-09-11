@@ -1,0 +1,36 @@
+/node_modules/
+/client/node_modules/
+/server/node_modules/
+
+# Build outputs
+/dist/
+/build/
+/client/dist/
+/client/.vite/
+/server/dist/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Database
+*.sqlite
+
+# IDEs and OS
+.vscode/
+.idea/
+.DS_Store
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
+
+# Misc
+coverage/
+.cache/
+
+__pycache__/
+*.pyc

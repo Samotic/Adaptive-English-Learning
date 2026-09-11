@@ -1,0 +1,40 @@
+{
+  "name": "adaptive-server",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "node --watch src/index.js",
+    "start": "node src/index.js",
+    "test": "node --test --test-concurrency=1 \"tests/*.test.js\"",
+    "seed": "node scripts/seed-comprehensive.js",
+    "seed:all": "node scripts/seed-comprehensive-all.js",
+    "seed:free-text": "node scripts/seed-free-text.js",
+    "seed:audio": "node scripts/add-audio-to-listening.js",
+    "seed:demo-users": "node scripts/create-demo-users.js",
+    "content:stats": "node scripts/view-content-stats.js",
+    "reset": "node scripts/reset-database.js",
+    "debug:db": "node scripts/debug-db-state.js",
+    "retrain": "node scripts/retrain.js"
+  },
+  "dependencies": {
+    "@google/genai": "^2.22.0",
+    "bcryptjs": "^3.0.2",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^4.21.2",
+    "express-rate-limit": "^8.7.0",
+    "google-auth-library": "^11.0.2",
+    "google-tts-api": "^2.0.2",
+    "helmet": "^8.3.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.9.5",
+    "nodemailer": "^10.0.7",
+    "pdfkit": "^0.20.2"
+  },
+  "devDependencies": {
+    "supertest": "^7.2.2"
+  }
+}
